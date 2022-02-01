@@ -1,0 +1,110 @@
+<section class="regiser">
+  <div class="container">
+    <div class="register__wrapper">
+      <h1 class="regiser__title">
+        Регистрационные данные
+      </h1>
+      <form class="register__form form" action="#" novalidate>
+        <div class="form__wrapper">
+          <label class="form__label" for="login">
+            Логин (мин. 3 символа):*
+          </label>
+          <input class="form__input form__input--login" type="text" name="login" minlength="3"
+            maxlength="40" placeholder="От 2 до 40 символов" id="login">
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label form__label--email">
+            E-Mail:*
+          </label>
+          <div class="form__box">
+            <div class="form__inner">
+              <input name="email" class="form__input form__input--email" type="email"
+                placeholder="231@asdd.ss">
+              <button class="btn-reset form__btn btn" type="button">Редактировать</button>
+            </div>
+            <p class="form__important"><span>Важно!</span> При регистрации Вы не указали свою электронную почту,
+              либо
+              указали почту
+              которую мы не смогли проверить. Без верно указанного адреса E-mail Вы не сможете восстановить пароль
+              от
+              своей учетной записи и получить сообщения о важных событиях. Укажите свою электронную почту и
+              пользуйтесь
+              сайтом без ограничений!
+              Для того, чтобы изменить адрес электронной почты, укажите номер телефона.
+            </p>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label form__label--new-pass" for="new-password">
+            Новый пароль:
+          </label>
+          <div class="form__box-pass">
+            <input class="form__input form__input--new-pass" type="password" name="new-password" minlength="6"
+              id="new-password">
+            <p class="form__descr">
+              Пароль должен быть не менее 6 символов, содержать знаки пунктуации <br> (,.<>
+                /?;:'"[]{}\|`~!@#$%^&*()-_+=).
+            </p>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="confirm-password">
+            Подтверждение нового пароля:
+          </label>
+          <div class="form__box-pass error">
+            <input class="form__input form__input--confirm" value="case1case.com" name="confirm-password"
+              type="text"
+              id="confirm-password">
+              <span class="form__format">Неправильный формат данных</span>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="phone">
+            Номер сотового*:
+          </label>
+          <input type="tel" name="phone" class="form__input form__input--phone" id="phone">
+        </div>
+        <div class="form__location">
+          <span>Местоположение пользователя * :</span>
+          <div class="form__select">
+            <select class="form__country form__multi" name="страна" id="country">
+              <option selected value="Россия">Россия</option>
+              <option value="Беларусь">Беларусь</option>
+              <option value="Казахстан">Казахстан</option>
+              <option value="Чехия">Чехия</option>
+            </select>
+            <select class="form__region form__multi" name="регион" id="region">
+              <option value="Алтайский край">Алтайский край</option>
+              <option selected value="Белгородская обл">Белгородская обл</option>
+              <option value="Краснодарский край">Краснодарский край</option>
+              <option value="Москвая область">Москвая область</option>
+            </select>
+            <select class="form__city form__multi" name="город" id="city">
+              <option selected value="Ракитное">Ракитное</option>
+              <option value="Красная Яруга">Красная Яруга</option>
+              <option value="Пролетарский">Пролетарский</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="name">
+            ФИО (полностью): *
+          </label>
+          <input type="text" name="name" id="name" class="form__input form__input--name">
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label " for="data-of-birth">
+            Дата рождения (DD.MM.YYYY): *
+          </label>
+          <input class="form__input form__input--date datepicker" name="data-of-birth" id="data-of-birth">
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="skype">
+            Skype
+          </label>
+          <input type="text" name="skype" class="form__input" id="skype">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

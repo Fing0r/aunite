@@ -1,0 +1,367 @@
+.regiser {
+  padding-top: 76px;
+  padding-bottom: 43px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    text-align: center;
+
+    @include mobile {
+      margin-bottom: 24px;
+      letter-spacing: 0;
+      text-align: start;
+    }
+
+    @include mobile {
+      padding-top: 112px;
+    }
+
+    @include tablet {
+      padding-top: 99px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.form {
+  &__box {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    @include tablet {
+      max-width: 680px;
+    }
+
+    @include bigtablet {
+      max-width: 880px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    white-space: nowrap;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    @include mobile {
+      max-width: 280px;
+    }
+  }
+
+  &__inner {
+    margin-bottom: 16px;
+    width: 100%;
+
+    @include mobile {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    @include tablet {
+      max-width: 680px;
+    }
+
+    @include bigtablet {
+      max-width: 880px;
+    }
+  }
+
+  &__input {
+    border: 1px solid var(--gray-main);
+    border-radius: var(--select-rad);
+    padding: 14px 16px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+      color: var(--gray);
+    }
+
+    &--new-pass {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &--email {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+
+        @include mobile {
+          margin-bottom: 0;
+        }
+      }
+
+      @include mobile {
+        margin-right: 16px;
+        min-width: 383px;
+      }
+
+      @include tablet {
+        width: 100%;
+        max-width: 384px;
+      }
+
+      @include bigtablet {
+        width: 100%;
+        max-width: 584px;
+      }
+    }
+
+    &--confirm {
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+
+    &--date {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include tablet {
+      margin-top: 0;
+      max-width: 680px;
+    }
+
+    @include bigtablet {
+      max-width: 880px;
+    }
+  }
+
+  &__box-pass {
+    &.error {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 16px;
+        top: 17px;
+        width: 4px;
+        height: 14px;
+        background-image: url("../img/error.svg");
+      }
+    }
+
+    &.error .form__input {
+      border-color: var(--red-main);
+      font-weight: 500;
+      color: var(--red-main);
+    }
+
+    @include tablet {
+      margin-top: 0;
+      width: 100%;
+      max-width: 680px;
+    }
+
+    @include bigtablet {
+      max-width: 880px;
+    }
+  }
+
+  &__format {
+    display: block;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: calc(13 / 11);
+    color: var(--red-main);
+  }
+
+  &__descr {
+    max-width: 690px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    white-space: initial;
+  }
+
+  &__important {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    text-align: center;
+
+    span {
+      font-weight: 700;
+      color: var(--red-main);
+    }
+
+    @include mobile {
+      font-size: 14px;
+      text-align: start;
+    }
+  }
+
+  &__location {
+    margin-bottom: 16px;
+
+    span {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__select {
+    @include tablet {
+      display: flex;
+    }
+  }
+}
+
+.ui-datepicker-trigger {
+  position: absolute;
+  right: 11px;
+  bottom: 9px;
+  width: 30px;
+  height: 30px;
+}
+
+.choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 14px;
+}
+
+.choices {
+  &:not(:last-child) {
+    @include mobile {}
+
+    margin-bottom: 10px;
+
+    @include tablet {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+
+    @include bigtablet {
+      margin-right: 20px;
+    }
+  }
+
+  @include tablet {
+    width: 220px;
+  }
+
+  @include bigtablet {
+    width: 280px;
+  }
+}
+
+.choices__inner {
+  border: 1px solid var(--gray-main);
+  border-radius: var(--select-rad);
+  padding: 13px 16px;
+  background-color: var(--white);
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.is-open .choices__inner {
+  border-color: var(--gray-main);
+  border-bottom: none;
+  border-radius: var(--select-rad) var(--select-rad) 0 0;
+}
+
+.choices[data-type*="select-one"]::after {
+  position: absolute;
+  right: 11.5px;
+  top: 50%;
+  margin-top: 0;
+  border-width: 0;
+  width: 20px;
+  height: 10px;
+  background-image: url("../img/arrow.svg");
+  transform: translateY(-50%) rotateX(180deg);
+  transition: transform 0.3s;
+  pointer-events: none;
+}
+
+.choices[data-type*="select-one"].is-open::after {
+  margin-top: 0;
+  transform: translateY(-50%) rotateX(0);
+}
+
+.choices__item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+}
+
+.choices__list--dropdown {
+  border: 1px solid var(--gray-main);
+  border-top: none;
+  border-radius: 0 0 var(--select-rad) var(--select-rad);
+}
+
+.choices__list--dropdown .choices__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+}
+
+.is-open .choices__list--dropdown {
+  border-color: var(--gray-main);
+}
+
+.choices__list--dropdown .choices__item--selectable::after {
+  display: none;
+}
+
+.ui-datepicker-trigger {
+  cursor: pointer;
+}

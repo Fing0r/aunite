@@ -1,0 +1,160 @@
+.cashback {
+  position: relative;
+  padding-top: 33px;
+  padding-bottom: 235px;
+  background-color: var(--gray-main);
+
+  &__container {
+    @include bigtablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 27px;
+
+    @include mobile {
+      margin-bottom: 27px;
+      max-width: 679px;
+    }
+
+    @include bigtablet {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    color: var(--yellow-main);
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+
+    @include bigtablet {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__info {
+    max-width: 328px;
+    @include mobile {
+      max-width: none;
+    }
+
+    @include bigtablet {
+      max-width: 480px;
+    }
+  }
+
+  &__video {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: var(--btn-rad);
+    width: 324px;
+    height: 204px;
+    box-shadow: 0 0 60px #343a40;
+    background-size: cover;
+    background-color: #636363;
+
+    @include mobile {
+      margin: 0;
+      margin-left: auto;
+    }
+
+    @include bigtablet {
+      width: 480px;
+      height: 290px;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    left: 50%;
+    z-index: 0;
+    display: block;
+    border-radius: 50%;
+    width: 252px;
+    height: 252px;
+    background-color: var(--pink-main);
+    transform: translate(-50%, -81px);
+
+    @include mobile {
+      left: 122px;
+      left: auto;
+      right: 435px;
+      bottom: 38px;
+      width: 211px;
+      height: 211px;
+      transform: translate(0);
+    }
+
+    @include bigtablet {
+      left: 50%;
+      bottom: 18px;
+      width: 258px;
+      height: 258px;
+      transform: translateX(-39%);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 48px;
+    z-index: 0;
+    height: 163px;
+    background-image: url("../img/decor.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mobile {
+      left: auto;
+      right: 237px;
+      bottom: 27px;
+      width: 470px;
+      height: 212px;
+      background-size: cover;
+    }
+
+    @include bigtablet {
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-26%);
+      right: auto;
+    }
+  }
+
+  &__descr,
+  &__list {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: var(--white);
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  @include mobile {
+    padding-top: 24px;
+    padding-bottom: 37px;
+  }
+
+  @include bigtablet {
+    padding-top: 41px;
+    padding-bottom: 54px;
+  }
+}
