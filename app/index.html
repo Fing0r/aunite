@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Aunite</title>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body class="page__body">
+  <div class="site-container">
+    <main>
+      <section class="regiser">
+  <div class="container">
+    <div class="register__wrapper">
+      <h1 class="regiser__title">
+        Регистрационные данные
+      </h1>
+      <form class="register__form form" action="#" novalidate>
+        <div class="form__wrapper">
+          <label class="form__label" for="login">
+            Логин (мин. 3 символа):*
+          </label>
+          <input class="form__input form__input--login" type="text" name="login" minlength="3"
+            maxlength="40" placeholder="От 2 до 40 символов" id="login">
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label form__label--email">
+            E-Mail:*
+          </label>
+          <div class="form__box">
+            <div class="form__inner">
+              <input name="email" class="form__input form__input--email" type="email"
+                placeholder="231@asdd.ss">
+              <button class="btn-reset form__btn btn" type="button">Редактировать</button>
+            </div>
+            <p class="form__important"><span>Важно!</span> При регистрации Вы не указали свою электронную почту,
+              либо
+              указали почту
+              которую мы не смогли проверить. Без верно указанного адреса E-mail Вы не сможете восстановить пароль
+              от
+              своей учетной записи и получить сообщения о важных событиях. Укажите свою электронную почту и
+              пользуйтесь
+              сайтом без ограничений!
+              Для того, чтобы изменить адрес электронной почты, укажите номер телефона.
+            </p>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label form__label--new-pass" for="new-password">
+            Новый пароль:
+          </label>
+          <div class="form__box-pass">
+            <input class="form__input form__input--new-pass" type="password" name="new-password" minlength="6"
+              id="new-password">
+            <p class="form__descr">
+              Пароль должен быть не менее 6 символов, содержать знаки пунктуации <br> (,.<>
+                /?;:'"[]{}\|`~!@#$%^&*()-_+=).
+            </p>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="confirm-password">
+            Подтверждение нового пароля:
+          </label>
+          <div class="form__box-pass error">
+            <input class="form__input form__input--confirm" value="case1case.com" name="confirm-password"
+              type="text"
+              id="confirm-password">
+              <span class="form__format">Неправильный формат данных</span>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="phone">
+            Номер сотового*:
+          </label>
+          <input type="tel" name="phone" class="form__input form__input--phone" id="phone">
+        </div>
+        <div class="form__location">
+          <span>Местоположение пользователя * :</span>
+          <div class="form__select">
+            <select class="form__country form__multi" name="страна" id="country">
+              <option selected value="Россия">Россия</option>
+              <option value="Беларусь">Беларусь</option>
+              <option value="Казахстан">Казахстан</option>
+              <option value="Чехия">Чехия</option>
+            </select>
+            <select class="form__region form__multi" name="регион" id="region">
+              <option value="Алтайский край">Алтайский край</option>
+              <option selected value="Белгородская обл">Белгородская обл</option>
+              <option value="Краснодарский край">Краснодарский край</option>
+              <option value="Москвая область">Москвая область</option>
+            </select>
+            <select class="form__city form__multi" name="город" id="city">
+              <option selected value="Ракитное">Ракитное</option>
+              <option value="Красная Яруга">Красная Яруга</option>
+              <option value="Пролетарский">Пролетарский</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="name">
+            ФИО (полностью): *
+          </label>
+          <input type="text" name="name" id="name" class="form__input form__input--name">
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label " for="data-of-birth">
+            Дата рождения (DD.MM.YYYY): *
+          </label>
+          <input class="form__input form__input--date datepicker" name="data-of-birth" id="data-of-birth">
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="skype">
+            Skype
+          </label>
+          <input type="text" name="skype" class="form__input" id="skype">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <section class="cashback">
+  <div class="container cashback__container">
+    <div class="cashback__wrapper">
+      <h2 class="cashback__title">
+        Корпорация «Aunite Group» — это один из крупнейших кэшбэк&#8209;сервисов в России и СНГ.
+      </h2>
+      <div class="cashback__info">
+        <p class="cashback__descr">
+          Сегодня любому пользователю или партнеру Корпорации доступны:
+        </p>
+        <ul class="cashback__list">
+          <li class="cashback__item">-&nbsp;Кэшбэк в 800+ интернет-магазинах;</li>
+          <li class="cashback__item">-&nbsp;Скидки в 9000+ компаниях по всей России;</li>
+          <li class="cashback__item">-&nbsp;Оплата товаров и услуг из личного кабинета;</li>
+          <li class="cashback__item">-&nbsp;Уникальная 9-уровневая партнерская программа.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cashback__box">
+      <iframe class="cashback__video" src="https://www.youtube-nocookie.com/embed/PM0kra8-SNY?controls=0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <div class="cashback__decor">
+        <div class="cashback__circle"></div>
+        <div class="cashback__img"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="procedure">
+  <div class="container">
+    <h2 class="visually-hidden">Как получить кэшбек</h2>
+    <ul class="procedure__list">
+      <li class="procedure__item">
+        <span class="procedure__count">1</span>
+        <p class="procedure__descr">Выберете в списке ниже проект, ссылкой на который хотите поделиться</p>
+      </li>
+      <li class="procedure__item">
+        <span class="procedure__count">2</span>
+        <p class="procedure__descr">Нажмите кнопку скопировать - ваша ссылка будет <br>скопирована в буфер обмена</p>
+      </li>
+      <li class="procedure__item">
+        <span class="procedure__count">3</span>
+        <p class="procedure__descr">Вставьте вашу ссылку, нажав правой кнопкой мыши и выбрав "Вставить" или
+          воспользуйтесь комбинацией клавиш CTRL-V</p>
+      </li>
+    </ul>
+    <div class="procedure__action action">
+      <ul class="action__list">
+        <li class="action__item action__item--cashback">
+          <h3 class="action__title">Кэшбэк-сервис</h3>
+          <div class="action__box">
+            <input class="action__input input" type="text" value="https://www.aunite.com/c" readonly id="cashback">
+            <button class="action__share" aria-label="поделиться ссылкой" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.204 10.175L13.9081 0.625854C13.504 0.210571 13.091 0 12.6808 0C12.1117 0 11.447 0.438171 11.447 1.67267V7.56042C8.60957 7.75891 5.96968 8.99744 3.9526 11.0911C1.77402 13.3522 0.574219 16.3497 0.574219 19.5311C0.574219 20.9015 0.798101 22.2473 1.23998 23.5312C1.3366 23.8121 1.59524 24 1.88525 24C2.17544 24 2.43391 23.8121 2.53069 23.5312C3.88968 19.5817 7.41957 16.8287 11.447 16.5018V22.3271C11.447 23.5616 12.1115 23.9998 12.6808 23.9998C13.091 23.9998 13.5038 23.7894 13.9079 23.3743L23.2042 13.8248C23.6772 13.3387 23.9379 12.6907 23.9379 11.9998C23.9377 11.3091 23.6771 10.6609 23.204 10.175ZM22.2361 12.8306L12.94 22.3801C12.8961 22.4249 12.8571 22.4608 12.8232 22.4892C12.8186 22.4445 12.8157 22.3909 12.8157 22.3273V15.7667C12.8157 15.579 12.7427 15.3988 12.6125 15.2668C12.4844 15.1366 12.3115 15.0635 12.1313 15.0635C12.1288 15.0635 12.1263 15.0637 12.1238 15.0637C9.68602 15.0916 7.35807 15.8831 5.39161 17.3525C4.01409 18.382 2.88737 19.6853 2.06814 21.1846C1.98507 20.6402 1.94318 20.0881 1.94318 19.5311C1.94318 13.7549 6.51691 9.0033 12.1389 8.93903C12.514 8.93481 12.8159 8.62134 12.8159 8.2359V1.67267C12.8159 1.60913 12.8188 1.55566 12.8232 1.5108C12.8571 1.53918 12.8961 1.57507 12.94 1.62012L22.2361 11.1694C22.4507 11.3899 22.5689 11.6847 22.5689 12C22.5687 12.3151 22.4505 12.6101 22.2361 12.8306Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="action__btn btn" type="button">Копировать ссылку</button>
+        </li>
+        <li class="action__item action__item--health">
+          <h3 class="action__title">Health</h3>
+          <div class="action__box">
+            <input class="action__input input" type="text" value="https://www.aunite.com/c" readonly id="health">
+            <button class="action__share" aria-label="поделиться ссылкой" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.204 10.175L13.9081 0.625854C13.504 0.210571 13.091 0 12.6808 0C12.1117 0 11.447 0.438171 11.447 1.67267V7.56042C8.60957 7.75891 5.96968 8.99744 3.9526 11.0911C1.77402 13.3522 0.574219 16.3497 0.574219 19.5311C0.574219 20.9015 0.798101 22.2473 1.23998 23.5312C1.3366 23.8121 1.59524 24 1.88525 24C2.17544 24 2.43391 23.8121 2.53069 23.5312C3.88968 19.5817 7.41957 16.8287 11.447 16.5018V22.3271C11.447 23.5616 12.1115 23.9998 12.6808 23.9998C13.091 23.9998 13.5038 23.7894 13.9079 23.3743L23.2042 13.8248C23.6772 13.3387 23.9379 12.6907 23.9379 11.9998C23.9377 11.3091 23.6771 10.6609 23.204 10.175ZM22.2361 12.8306L12.94 22.3801C12.8961 22.4249 12.8571 22.4608 12.8232 22.4892C12.8186 22.4445 12.8157 22.3909 12.8157 22.3273V15.7667C12.8157 15.579 12.7427 15.3988 12.6125 15.2668C12.4844 15.1366 12.3115 15.0635 12.1313 15.0635C12.1288 15.0635 12.1263 15.0637 12.1238 15.0637C9.68602 15.0916 7.35807 15.8831 5.39161 17.3525C4.01409 18.382 2.88737 19.6853 2.06814 21.1846C1.98507 20.6402 1.94318 20.0881 1.94318 19.5311C1.94318 13.7549 6.51691 9.0033 12.1389 8.93903C12.514 8.93481 12.8159 8.62134 12.8159 8.2359V1.67267C12.8159 1.60913 12.8188 1.55566 12.8232 1.5108C12.8571 1.53918 12.8961 1.57507 12.94 1.62012L22.2361 11.1694C22.4507 11.3899 22.5689 11.6847 22.5689 12C22.5687 12.3151 22.4505 12.6101 22.2361 12.8306Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="action__btn btn" type="button">Копировать ссылку</button>
+        </li>
+        <li class="action__item action__item--mobile">
+          <h3 class="action__title">Mobile</h3>
+          <div class="action__box">
+            <input class="action__input input" type="text" value="https://www.aunite.com/c" readonly id="mobile">
+            <button class="action__share"  aria-label="поделиться ссылкой" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.204 10.175L13.9081 0.625854C13.504 0.210571 13.091 0 12.6808 0C12.1117 0 11.447 0.438171 11.447 1.67267V7.56042C8.60957 7.75891 5.96968 8.99744 3.9526 11.0911C1.77402 13.3522 0.574219 16.3497 0.574219 19.5311C0.574219 20.9015 0.798101 22.2473 1.23998 23.5312C1.3366 23.8121 1.59524 24 1.88525 24C2.17544 24 2.43391 23.8121 2.53069 23.5312C3.88968 19.5817 7.41957 16.8287 11.447 16.5018V22.3271C11.447 23.5616 12.1115 23.9998 12.6808 23.9998C13.091 23.9998 13.5038 23.7894 13.9079 23.3743L23.2042 13.8248C23.6772 13.3387 23.9379 12.6907 23.9379 11.9998C23.9377 11.3091 23.6771 10.6609 23.204 10.175ZM22.2361 12.8306L12.94 22.3801C12.8961 22.4249 12.8571 22.4608 12.8232 22.4892C12.8186 22.4445 12.8157 22.3909 12.8157 22.3273V15.7667C12.8157 15.579 12.7427 15.3988 12.6125 15.2668C12.4844 15.1366 12.3115 15.0635 12.1313 15.0635C12.1288 15.0635 12.1263 15.0637 12.1238 15.0637C9.68602 15.0916 7.35807 15.8831 5.39161 17.3525C4.01409 18.382 2.88737 19.6853 2.06814 21.1846C1.98507 20.6402 1.94318 20.0881 1.94318 19.5311C1.94318 13.7549 6.51691 9.0033 12.1389 8.93903C12.514 8.93481 12.8159 8.62134 12.8159 8.2359V1.67267C12.8159 1.60913 12.8188 1.55566 12.8232 1.5108C12.8571 1.53918 12.8961 1.57507 12.94 1.62012L22.2361 11.1694C22.4507 11.3899 22.5689 11.6847 22.5689 12C22.5687 12.3151 22.4505 12.6101 22.2361 12.8306Z"/>
+              </svg>
+            </button>
+          </div>
+          <button class="action__btn btn" type="button">Копировать ссылку</button>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>
